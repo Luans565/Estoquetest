@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de estoque CSF - Painel administrativo</title>
+    <link rel="stylesheet" href="styles admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <img class="Logo-nav" src="logo.png" alt="Carrefas">
+            <li class="title"><h4>ADMIN</h4></li>
+            <li class="right">
+                <a href="index.html" target="_self">
+                    <img src="home.png" alt="Descrição da Imagem" />
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="stock-container">
+            <!-- Adicionar Item -->
+            <h2>Adicionar Item</h2>
+            <input type="text" id="item-name" placeholder="Nome do item">
+            <label for="item-quantity">Quantidade</label>
+            <input type="number" id="item-quantity" placeholder="Quantidade">
+            <button onclick="addItem()">Adicionar Item</button>
+
+            <!-- Botões para exibir opções de retirada e edição -->
+            <div class="action-buttons">
+                <button onclick="toggleSection('remove-section')">Retirar Item</button>
+                <button onclick="toggleSection('edit-section')">Editar Item</button>
+            </div>
+
+            <!-- Retirar Item (oculto inicialmente) -->
+            <div id="remove-section" class="hidden-section">
+                <h2>Retirar Item</h2>
+                <select id="remove-item-name">
+                    <option value="">Selecione um item</option>
+                </select>
+                <label for="remove-item-quantity">Quantidade</label>
+                <input type="number" id="remove-item-quantity" placeholder="Quantidade">
+                <button onclick="removeItem()">Confirmar Retirada</button>
+            </div>
+
+            <!-- Editar Item (oculto inicialmente) -->
+            <div id="edit-section" class="hidden-section">
+                <h2>Editar Item</h2>
+                <select id="edit-item-name">
+                    <option value="">Selecione um item</option>
+                </select>
+                <label for="edit-new-item-name">Novo nome (opcional)</label>
+                <input type="text" id="edit-new-item-name" placeholder="Novo nome (opcional)">
+                <label for="edit-item-quantity">Nova quantidade</label>
+                <input type="number" id="edit-item-quantity" placeholder="Nova quantidade">
+                <button onclick="editItem()">Confirmar Edição</button>
+            </div>
+        </div>
+
+        <!-- Estoque Atual -->
+        <div class="stock-table-container">
+            <h2>Estoque Atual</h2>
+            <table id="stock-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Item</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody id="stock-list">
+                    <!-- As linhas serão adicionadas dinamicamente com JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="common.js"></script>
+</body>
+</html>

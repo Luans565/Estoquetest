@@ -1,0 +1,180 @@
+/* Estilos gerais */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+    color: #3c46ab;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+nav {
+    background-color: #f5f7f9;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li.title {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li.right {
+    margin-left: auto;
+}
+
+nav ul li a img {
+    display: block;
+    width: 50px;
+    height: auto;
+    border: none;
+}
+
+.Logo-nav { width: 100px;
+            justify-content: center;}
+
+/* Contêiner principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Área de controle de estoque */
+.stock-container {
+    background-color: white;
+    width: 320px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stock-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.stock-container input[type="text"],
+.stock-container input[type="number"],
+.stock-container select {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+
+.stock-container input[type="text"]:focus,
+.stock-container input[type="number"]:focus,
+.stock-container select:focus {
+    border-color: #0275d8;
+    box-shadow: 0 0 3px rgba(0, 117, 255, 0.5);
+}
+
+.stock-container button {
+    background-color: #0275d8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.stock-container button:hover {
+    background-color: #025aa5;
+}
+
+/* Tabela de itens */
+.stock-table-container {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 30px;
+}
+
+.stock-table-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: initial;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f7f9;
+    color: #3c46ab;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color: #3c46ab;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Seções ocultas */
+.hidden-section {
+    display: none;
+}
+
+/* Botões de ação */
+.action-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.action-buttons button {
+    background-color: #103a5e;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #31b0d5;
+}

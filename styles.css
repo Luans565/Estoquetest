@@ -1,0 +1,113 @@
+/* Estilos gerais */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f2;
+    color: #3c46ab;
+    margin: 0;
+    padding: 0;
+}
+/* Cabeçalho ou banner */
+nav {
+    background-color: #f5f7f9;
+    color: rgb(237, 237, 238);
+    text-align: center;
+    padding: 1px 0; /* Reduzido o padding */
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+      }
+/* Container da imagem */
+.container {
+    display: grid;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 20vh; /* Ajuste a altura conforme necessário */
+    max-width: 50vw; /* Ajuste a largura máxima conforme necessário */
+    margin: 0px auto; /* Adiciona margem em cima e embaixo e centraliza horizontalmente */
+    padding: 20px; /* Adiciona preenchimento interno */
+    box-sizing: border-box; /* Inclui preenchimento e borda no tamanho total *
+    background-color: #f9f9f9; /* Adiciona uma cor de fundo opcional */
+    border-radius: 8px; /* Adiciona bordas arredondadas opcional */
+    margin-top: -60px;
+}
+
+img {
+    width: 100px; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Área de login */
+.login-container {
+    background-color: white;
+    width: 300px;
+    margin: 0px auto; /* Espaçamento reduzido em relação ao topo e base */
+    padding: 15px; /* Reduziu o padding */
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Ajuste na sombra */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 10px; /* Reduzido o espaçamento inferior */
+    font-size: 18px;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+.subtitulo {
+    color: #3c46ab;
+    font-size: 20px;
+}
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    margin-bottom: 10px; /* Reduziu o espaçamento inferior */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container form input[type="submit"] {
+    background-color: #0275d8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-container form input[type="submit"]:hover {
+    background-color: #025aa5;
+}
+/* Área de suporte */
+.support {
+    text-align: center;
+    margin-top: 10px; /* Reduziu o espaçamento superior */
+}
+.support p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.support a {
+    color: #0275d8;
+    text-decoration: none;
+}
+.support a:hover {
+    text-decoration: underline;
+}
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 10px; /* Reduziu o espaçamento superior */
+    padding: 10px 0;
+    font-size: 12px;
+    color: #777;
+}
+footer a {
+    color: #0275d8;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
